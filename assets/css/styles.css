@@ -64,14 +64,14 @@ button {
   background: var(--primary-color);
   border-color: var(--primary-color);
 }
-.section__heading {
+.section-heading {
   font-family: Sora, sans-serif;
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 1.2;
   color: #000958;
 }
-.section__desc {
+.section-desc {
   margin-top: 24px;
   font-family: Poppins;
   font-size: 1.6rem;
@@ -266,9 +266,10 @@ button {
 .about__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  row-gap: 146px;
 }
 .about__label {
-  margin-top: 77px;
   font-family: Sora, sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
@@ -288,6 +289,9 @@ button {
   grid-template-columns: auto auto;
   justify-content: flex-start;
   gap: 36px;
+}
+.about__media {
+  position: relative;
 }
 .about__check-item {
   position: relative;
@@ -311,8 +315,180 @@ button {
 }
 .about__check-item::after {
   position: absolute;
-  top: 4px;
+  top: 2px;
   left: 5px;
   content: url(../icons/check.svg);
+}
+.about__card {
+  width: 136px;
+  padding: 30px 26px;
+  position: absolute;
+  top: 165px;
+  left: 0;
+  border-radius: 10px;
+  background: #5bd6e2;
+  box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+  text-align: center;
+}
+.about__card-title {
+  color: #fff;
+  font-family: Sora, sans-serif;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.about__card-desc {
+  margin-top: 14px;
+  color: #c6f4f9;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.42;
+}
+.about__card-decor {
+  position: absolute;
+  top: -39px;
+  right: -31px;
+}
+.about__img-wrap {
+  position: relative;
+  width: 494px;
+  margin-left: auto;
+}
+.about__img-wrap::after {
+  position: absolute;
+  height: 336px;
+  content: "";
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+  box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+}
+.about__img {
+  width: 450px;
+  display: block;
+  margin: 0 auto;
+}
+.about__media-decor {
+  position: absolute;
+  top: 157px;
+  right: -50px;
+}
+.about__img-wrap-bottom {
+  margin-left: 0;
+  border-radius: 18px;
+  width: 458px;
+  border: 2px solid #fff;
+  background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+  box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
+}
+.about__img-wrap-bottom::after {
+  content: none;
+}
+.about__img-bottom {
+  width: 100%;
+}
+.about__decor-img {
+  position: absolute;
+}
+.about__decor-img:nth-child(1) {
+  top: 13px;
+  right: 63px;
+}
+.about__decor-img:nth-child(2) {
+  top: -16px;
+  right: 13px;
+}
+.about__decor-img:nth-child(3) {
+  top: 33px;
+  right: -28px;
+}
+.about__decor-img:nth-child(4) {
+  bottom: 206px;
+  right: -33px;
+}
+.about__decor-img:nth-child(5) {
+  right: 19px;
+  bottom: 150px;
+}
+.about__decor-img:nth-child(6) {
+  right: -42px;
+  bottom: -55px;
+}
+/* about__content bottom */
+.about__desc-bottom {
+  width: 511px;
+  margin-bottom: 50px;
+}
+.tab__list {
+  display: inline-flex;
+  column-gap: 56px;
+  position: relative;
+}
+.tab__list::after,
+.tab__list--active::after,
+.tab__content-more::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 1px;
+  opacity: 0.07;
+  background: #ff5b2e;
+}
+.tab__list--active::after {
+  width: 95px;
+  opacity: 1;
+}
+.tab__list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  column-gap: 12px;
+  cursor: pointer;
+}
+.tab__list-icon {
+  width: 20px;
+}
+.tab__list-title {
+  font-family: Sora, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #48496a;
+}
+.tab__contents {
+  padding-top: 36px;
+}
+.tab__content-desc {
+  width: 391px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.72;
+  color: #656689;
+  padding-bottom: 32px;
+}
+.tab__content-item {
+  display: none;
+}
+.tab__content-item--active {
+  display: block;
+}
+.tab__content-more {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #ff5d31;
+  position: relative;
+  padding-bottom: 5px;
+}
+.tab__content-more::after {
+  opacity: 1;
+  height: 1.5px;
 }
 /* End About */
