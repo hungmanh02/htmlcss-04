@@ -965,3 +965,26 @@ button {
   background: #ff5b2e;
 }
 /* End Review */
+/* Start Blog */
+.blog {
+  padding: 78px 0;
+}
+.blog__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog__info {
+  width: 350px;
+  margin-right: 74px;
+}
+.blog__desc {
+  margin-top: 0;
+}
+.blog__cta {
+  min-width: 182px;
+  margin-top: 24px;
+  border: 1px solid rgba(255, 91, 46, 0.6);
+  color: #ff5b2e;
+}
+/* End Blog */
